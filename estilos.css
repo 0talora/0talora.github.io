@@ -1,13 +1,16 @@
 *{
   font-family: "IBM Plex Mono"
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   background: radial-gradient(circle, #222428 , #000000);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
 }
 
