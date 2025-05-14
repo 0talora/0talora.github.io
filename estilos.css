@@ -1,12 +1,14 @@
-*{
-  font-family: "IBM Plex Mono"
+* {
+  font-family: 'IBM Plex Mono';
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background: radial-gradient(circle, #222428 , #000000);
+  background: radial-gradient(circle, #222428, #000000);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,9 +30,8 @@ body {
   padding: 1%;
   border-radius: 0 0 18px 18px;
   z-index: 1000;
-  border:1px solid aqua;
+  border: 1px solid aqua;
   border-top: none;
-
 }
 
 .titulo h2 {
@@ -57,10 +58,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.24, 1.18), box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.24, 1.18),
+    box-shadow 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(167, 167, 167, 0.5);
 }
@@ -73,13 +75,13 @@ body {
   color: aqua;
 }
 
-.btn-primary{
+.btn-primary {
   border-color: red;
   background-color: #000000;
   transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.24, 1.18);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   color: rgb(0, 0, 0);
   border-color: rgb(255, 255, 255);
   background-color: #ff0000;
@@ -91,30 +93,4 @@ body {
   border-color: red !important;
   transform: scale(1.1);
   box-shadow: none !important;
-}
-
-
-@media only screen and (max-width: 1320px) {
-  body {
-    flex-direction: column;
-    padding: 5px;
-  }
-
-  .contenedor {
-    flex-direction: column;
-    max-width: 100%;
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .card {
-    flex: 1 1 100%; /* Que ocupe todo el ancho */
-  }
-
-  .titulo {
-    width: 100%;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 0;
-  }
 }
