@@ -39,7 +39,6 @@ body {
   z-index: 1000;
   border:1px solid aqua;
   border-top: none;
-  
 }
 
 .contenedor {
@@ -102,6 +101,21 @@ body {
   box-shadow: none !important;
 }
 
+.footer{
+
+  color: aqua;
+  text-align: center;
+  border-top: 1px solid aqua;
+}
+.pie{
+  width: 100%;
+  margin-top: auto;
+  background-color: #000000;
+    height: 50px;
+}
+.pie .footer .derechos{
+  
+}
 @media (max-width: 1320px) {
   .contenedor {
     display: flex;
