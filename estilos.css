@@ -36,6 +36,7 @@ body {
 }
 
 .contenedor {
+  margin: auto;
   margin-inline: 300px;
   align-self: stretch;
   display: grid;
