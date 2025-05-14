@@ -44,7 +44,6 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fit,minmax(300pc,1fr));
 }
 
 .card {
@@ -97,42 +96,25 @@ body {
 
 @media only screen and (max-width: 1320px) {
   body {
-    flex-direction: column; /* Por ejemplo, en lugar de horizontal */
+    flex-direction: column;
     padding: 5px;
   }
 
   .contenedor {
     flex-direction: column;
-    width: 80%;
+    max-width: 100%;
     padding: 10px;
-    gap: 60px;
+    gap: 20px;
   }
 
   .card {
     flex: 1 1 100%; /* Que ocupe todo el ancho */
-    width: 50%;
   }
-.card-img-top{
-  width: 50%;
-}
+
   .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-  text-align: center;
-  color: aqua;
-  background-color: #2a2c30;
-  position: sticky;
-  position: fixed;
-  top: 0;
-  width: fit-content;
-  padding: 1%;
-  border-radius: 0 0 18px 18px;
-  z-index: 1000;
-  border:1px solid aqua;
-  border-top: none;
-
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 0;
   }
-
 }
