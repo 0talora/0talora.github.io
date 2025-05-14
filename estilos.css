@@ -19,6 +19,7 @@ body {
   align-items: center;
   gap: 2rem;
   min-height: 100vh;
+  border: 1px solid aqua;
 }
 
 .titulo {
@@ -42,7 +43,7 @@ body {
 }
 
 .contenedor {
-  margin: auto;
+  margin-top: 200px; /* Distancia de 30px desde la parte superior */
   margin-inline: 300px;
   align-self: stretch;
   display: grid;
@@ -106,9 +107,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 4%;
   }
 
   .card {
