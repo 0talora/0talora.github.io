@@ -101,9 +101,8 @@ body {
 }
 
 .btn-primary:hover {
-  color: rgb(0, 0, 0);
-  border-color: rgb(255, 255, 255);
-  background-color: #ff0000;
+  border-color: yellow;
+  background-color: #000000;
   transform: scale(1.1);
 }
 
