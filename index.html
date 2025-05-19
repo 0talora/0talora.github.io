@@ -12,6 +12,16 @@
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+  function copy(elemento){
+    const texto = document.getElementById("correo").textContent;
+    navigator.clipboard.writeText(texto).then(() => {
+      const aviso = document.getElementById("copiado");
+      aviso.style.display = "inline";
+      setTimeout(() => {
+        aviso.style.display = "none";
+      }, 1000);
+    });
+  }
 </script>
 
 </head>
@@ -77,7 +87,8 @@
     <footer class="footer">
       <div class="contacto">
         <p class="datosContacto"><u>Datos de Contacto</u></p>
-        <p class="correo">pablootaloraamor@gmail.com</p>
+        <p id="correo" class="correo" onclick="copy(this)">pablootaloraamor@gmail.com</p>
+        <small id="copiado">¡Copiado!</small>
       </div>
       <p class="derechos">&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
     </footer>

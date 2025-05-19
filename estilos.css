@@ -132,7 +132,11 @@ body {
   font-weight: 600;
   font-style: normal;
 }
-
+.pie .footer .contacto #copiado{
+  display: none;
+  font-size: 0.7rem;
+  color: lightgreen;
+}
 @media (max-width: 1320px) {
   .contenedor {
     display: flex;
