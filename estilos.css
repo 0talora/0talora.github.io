@@ -10,6 +10,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+html{
+  border: 1px solid aqua;
+}
 
 body {
   font-family: 'IBM Plex Mono', sans-serif;
@@ -19,8 +22,8 @@ body {
   align-items: center;
   gap: 2rem;
   min-height: 100vh;
-  border: 1px solid aqua;
 }
+
 
 .titulo {
   display: flex;
@@ -40,9 +43,13 @@ body {
   border:1px solid aqua;
   border-top: none;
 }
+.titulo a{
+  text-decoration: none;
+  color: aqua;
+}
 
 .contenedor {
-  margin-top: 200px; /* Distancia de 30px desde la parte superior */
+  margin-top: 200px;
   margin-inline: 300px;
   align-self: stretch;
   display: grid;
@@ -81,6 +88,12 @@ body {
   max-width: 20ch;
 }
 
+.card .card-title{
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-style: oblique;
+}
+
 .btn-primary {
   border-color: red;
   background-color: #000000;
@@ -105,17 +118,22 @@ body {
 
   color: aqua;
   text-align: center;
-  border-top: 1px solid aqua;
 }
 .pie{
   width: 100%;
   margin-top: auto;
   background-color: #000000;
-    height: 50px;
+  padding: 1rem;
+  border-top: 1px solid aqua;
 }
 .pie .footer .derechos{
-  
+  font-weight: 700;
 }
+.pie .footer .contacto .datosContacto{
+  font-weight: 600;
+  font-style: normal;
+}
+
 @media (max-width: 1320px) {
   .contenedor {
     display: flex;
@@ -129,22 +147,5 @@ body {
   .card {
     width: 95%;
     max-width: 300px;
-  }
-
-  .card-img-top {
-    width: 70%;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-text {
-    font-size: 0.85rem;
-  }
-
-  .btn-primary {
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
   }
 }
